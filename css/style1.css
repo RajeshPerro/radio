@@ -180,7 +180,27 @@ HEADER
     font-weight: 300;
     text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
 }
-
+h3{
+    font-size: 13px;
+    font-family: 'Bree Serif', serif;
+    line-height: 16px;
+    text-align: center;
+    padding: 10px 0;
+    color: maroon;
+    font-weight: 300;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+h6{
+    font-size: 13px;
+    font-family: 'Bree Serif', serif;
+    line-height: 16px;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: 300;
+        margin-top:0px;
+    margin-bottom: 0px;
+}
 /*******************
 CONTENT
 *******************/
@@ -188,7 +208,9 @@ CONTENT
 .login-form .content {
     padding: 0 30px 10px 30px;
    
-}.login-form .content1 {
+}
+
+.login-form .content1 {
     padding: 0px;
    
 }
@@ -199,22 +221,13 @@ CONTENT
 
 /* Input field */
 .login-form .content .input {
-    
-    padding: 10px 15px;
-
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+     margin: 5px 0px;
+     font-size: 11px;
+     font-weight: bold;
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 600;
     font-size: 11px;
-    color: #888;
-    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
-
-    background: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-
-    box-shadow: inset 0 0px 3px rgba(0,0,0,0.50);
-    -moz-box-shadow: inset 0 0px 3px rgba(0,0,0,0.50);
-    -webkit-box-shadow: inset 0 0px 3px rgba(0,0,0,0.50);
+    
 }
 .login-form .content h5 {
     font-family: 'Bree Serif', serif;
@@ -246,12 +259,12 @@ CONTENT
 }
 
 .login-form .content .input:hover {
-    background: #dfe9ec;
+    background: #fff9e9;
     color: #414848;
 }
 
 .login-form .content .input:focus {
-    background: #dfe9ec;
+    background: #fff9e9;
     color: #414848;
 
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
@@ -363,6 +376,7 @@ FOOTER
 
 .login-form .footer {
     padding: 10px 0px;
+    margin: 10px 0 0;
     overflow: auto;
     text-align: center;
     background: #fff9e9;
@@ -435,7 +449,7 @@ FOOTER
 /* Login button1 */
 .login-form .footer .button1 {
 
-    padding: 5px 50px;
+    padding: 5px 20px;
     float: right;
     font-family: 'Bree Serif', serif;
     font-weight: 300;
@@ -464,7 +478,7 @@ FOOTER
 .login-form .footer .button1:focus {
     position: relative;
     bottom: -1px;
-    background: #56c2e1;
+    background: red;
     box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
     -moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
     -webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
@@ -478,4 +492,47 @@ FOOTER
 .login-form .footer .register:focus {
     position: relative;
     bottom: -1px;
+}
+.text{
+    text-decoration: none;
+    color: #cc0000;
+    padding: 10px 10px;
+    font-family: 'Bree Serif', serif;
+}
+.text:hover{
+    text-decoration: none;
+    padding: 10px 10px;
+    color: maroon;
+}
+.text:focus{
+    text-decoration: none;
+   color: maroon;
+   padding: 10px 10px;
+}
+.text:active{
+    text-decoration: none;
+   color: #990099;
+   padding: 10px 10px;
+}
+
+.text1{
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    color: #82008a;
+    padding: 10px 10px;
+}
+.text1:hover{
+    text-decoration: none;
+    padding: 10px 10px;
+    color: #990099;
+}
+.text1:focus{
+    text-decoration: none;
+   color: #990099;
+   padding: 10px 10px;
+}
+.text1:active{
+    text-decoration: none;
+   color: #c7254e;
+   padding: 10px 10px;
 }

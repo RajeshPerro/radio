@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Radio Foorti RJ Hunt Campaign </title>
+        <title>Administrative Panel | Radio Foorti RJ Hunt Campaign </title>
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
         <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -10,27 +10,36 @@
     <body>
         <!--WRAPPER-->
         <div id="wrapper">
-            
-
             <!--LOGIN FORM-->
-            <form name="email_auth" class="login-form" action="" method="post">
+            <form name="admin_login" class="login-form" action="" method="post">
 
                 <!--HEADER-->
                 <div class="header">
                     <!--TITLE--><h1><img class="img-responsive" src="images/logo.png" alt="Radio Foorti"></h1><!--END TITLE-->
-                    <!--DESCRIPTION--><span>We'll send a verification link to the email address you used to continue to the next steps. Please check your <b>Inbox, Junk</b> or <b>Spam</b> section.</span><!--END DESCRIPTION-->
+
                 </div>
+                <div class="content">
+                    <div class="col-xs-12 col-sm-12">
+                        <h4 class="text-center"><a href="#" class="text">Change Admin Information</a> | <a href="#" class="text" >User Information</a></h4>
+                        <hr>
+                    </div>
+                </div>
+                
                 <!--END HEADER-->
 
                 <!--CONTENT-->
                 <div class="content">
-                    <input name="emailAddress" type="text" class="input" placeholder="Enter your valid email address" onfocus="this.value = ''" /><!--END USERNAME-->
+                    <input name="admin_username" type="text" class="input" placeholder="Type admin username" onfocus="this.value = ''" /><!--END USERNAME-->
+                </div>
+                <div class="content">
+                    <input name="admin_password" type="password" class="input" placeholder="Enter password" onfocus="this.value = ''" /><!--END USERNAME-->
                 </div>
                 <!--END CONTENT-->
 
                 <!--FOOTER-->
                 <div class="footer">
-                    <input type="submit" name="submit" value="Send Verfication Email" class="button1" /><!--END LOGIN BUTTON-->
+
+                    <input type="submit" name="submit" value="Update" class="button1" /><!--END LOGIN BUTTON-->
                 </div>
                 <!--END FOOTER-->
 
@@ -40,10 +49,10 @@
         </div>
         <!--END WRAPPER-->
 
-        
+
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        
-        
+
+
     </body>
 </html>

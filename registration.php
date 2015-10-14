@@ -1,11 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: rajesh
- * Date: 10/14/15
- * Time: 3:37 PM
- */
-?>
+
 <!DOCTYPE html>
 <html>
 <head>

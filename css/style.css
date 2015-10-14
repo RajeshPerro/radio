@@ -249,6 +249,7 @@ FOOTER
 
 .login-form .footer {
 	padding: 10px 0px;
+        margin: 10px 0 0;
 	overflow: auto;
 	text-align: center;
         background: #fff9e9;
@@ -366,4 +367,50 @@ FOOTER
 .login-form .footer .register:focus {
 	position: relative;
 	bottom: -1px;
+}
+
+.text{
+    text-decoration: none;
+    color: #82008a;
+    padding: 10px 0px;
+    font-family: 'Bree Serif', serif;
+}
+.text:hover{
+    text-decoration: none;
+    padding: 10px 0px;
+    color: maroon;
+}
+.text:focus{
+    text-decoration: none;
+   color: maroon;
+   padding: 10px 0px;
+}
+.text:active{
+    text-decoration: none;
+   color: #990099;
+   padding: 10px 10px;
+}
+
+.text1{
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    color: #666;
+    padding: 10px 10px;
+    font-size: 12px;
+    text-align: left;
+}
+.text1:hover{
+    text-decoration: none;
+    padding: 10px 10px;
+    color: #444;
+}
+.text1:focus{
+    text-decoration: none;
+   color: #444;
+   padding: 10px 10px;
+}
+.text1:active{
+    text-decoration: none;
+   color: #444;
+   padding: 10px 10px;
 }

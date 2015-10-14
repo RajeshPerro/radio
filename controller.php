@@ -8,6 +8,7 @@ include('database_config.php');
 
 if(isset($_POST['emailAddress']))
 {
+    $Email=$_POST['emailAddress'];
     $post=$_POST;
     $db_user = $DataBaseUser;
     $db_pass = $DataBasePassword;
@@ -15,8 +16,8 @@ if(isset($_POST['emailAddress']))
     $table = 'registration';
     $db_name=$DataBaseName;
     $raj_modelobject->data_insert_withfile($post,$file,$table,$db_user,$db_pass,$db_name);
-    echo("<script>alert('Successfully Saved!')</script>");
-   echo("<script>location.href='registration.php'</script>");
+//    echo("<script>alert('Successfully Saved!')</script>");
+   echo("<script>location.href='user_registration_step2.php?email=+$Email'</script>");
 
 }
 ?>

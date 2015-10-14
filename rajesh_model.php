@@ -266,6 +266,78 @@ class test
     }
 
 
+    public function data_insert_audio($post,$file,$table,$db_user,$db_pass,$db_name,$email)
+    {
+
+        $con_user=$db_user; $con_pass=$db_pass; $con_name=$db_name;
+        $Email=$email;
+
+        $colum="";
+        $values="";
+        //$_FILES =$file;
+        $limit=count($post) ;
+        $image='image';
+        $allvalues="";
+        $i=0;
+        foreach($post as $name=> $value)
+        {
+            if($i==0)
+            {
+                $colum.="`".$name."`";
+                $values.="'".$value."'";
+
+            }
+            else
+            {
+                $colum.=",`".$name."`";$values.=",'".$value."'";
+            }
+            if($i==($limit-1))
+            {
+                $colum.=",`".$image."`";
+            }
+            $i++;
+        }
+        $colum;
+        $values;
+        $j=0;
+        $imgvalues="";
+        $allimge="";
+        $Server='http://'.$_SERVER['HTTP_HOST'];
+        foreach ($_FILES['image']['tmp_name'] as $key =>$tmp_name)
+        {
+            $name=trim($_FILES['image']['name'][$key]);
+            $target="audio/";
+            $target=$target.$_FILES['image']['name'][$key];
+            if($j==0){$imgvalues.=$name;}
+            else
+            {$imgvalues.=";".$name; }
+            $j++;
+            move_uploaded_file($tmp_name,$target);
+        }
+        $allimge=",'".$imgvalues."'";
+        $colum;
+        $allvalues.=$values.$allimge;
+
+        $sql="insert into $table ($colum)values($allvalues)";
+        print_r($sql);
+        //exit;
+        $connection_object=new connect();
+        if(!empty($con_user) && !empty($con_pass))
+        {
+            $dbcon=$connection_object->connection('localhost',$con_user,$con_pass,$con_name);
+        }
+        else
+        {
+            $dbcon=$connection_object->connection('localhost','root','',$con_name);
+
+        }
+
+        $preparedStatement =$dbcon->prepare($sql);
+        $preparedStatement->execute(array('$colum' => '$allvalues'));
+
+    }
+
+
     //Data Insert End
 
 
