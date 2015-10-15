@@ -2,7 +2,7 @@ function restore(){$("#record, #live").removeClass("disabled");$(".one").addClas
 
 $(document).ready(function(){
   $(document).on("click", "#record:not(.disabled)", function(){
-   
+
       elem = $(this);
     setTimeout(function(){
       $("#download").trigger( "click" )}, 12000);
@@ -28,8 +28,10 @@ $(document).ready(function(){
   });
   
   $(document).on("click", "#download:not(.disabled)", function(){
+    var email=$("#user_email").val();
+    console.log(email);
     Fr.voice.export(function(url){
-      $("<a href='"+url+"' download='MyRecording.mp3'></a>")[0].click();
+      $("<a href='"+url+"' download='"+email+"_voice.mp3'></a>")[0].click();
     }, "URL");
     restore();
   });

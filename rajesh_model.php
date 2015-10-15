@@ -319,7 +319,7 @@ class test
         $allvalues.=$values.$allimge;
 
         $sql="insert into $table ($colum)values($allvalues)";
-        print_r($sql);
+       // print_r($sql);
         //exit;
         $connection_object=new connect();
         if(!empty($con_user) && !empty($con_pass))
@@ -352,9 +352,10 @@ class test
         if (!empty($con_user) && !empty($con_pass)) {
             $dbcon = $connection_object->connection('localhost', $con_user, $con_pass, $con_name);
         } else {
-            $dbcon = $connection_object->connection('localhost', 'firoz', 'firoz', $con_name);
+            $dbcon = $connection_object->connection('localhost', 'root', '', $con_name);
 
         }
+        //print_r($sql);
         $data = $dbcon->query($sql);
         // $dbcon->exec("SET character_set_results=utf8");
         while ($row = $data->fetch(PDO::FETCH_ASSOC)) {

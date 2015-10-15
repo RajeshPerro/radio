@@ -102,7 +102,7 @@ $Email=$_GET['email'];
                             <div class="col-xs-12 col-sm-12">
                                 <h5>Upload your recorded audio file</h5>
 
-                                <input type="email" readonly name="emailAddress" class="form-control" value="<?php echo $Email?>">
+                                <input type="email" id="user_email" readonly name="emailAddress" class="form-control" value="<?php echo $Email?>">
                                 <input name="image[]" type="file" class="form-control" /><!--END USERNAME-->
                             </div>
                         </div>
