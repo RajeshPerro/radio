@@ -45,14 +45,26 @@
       <file leaf-file-name="admin_view_user.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin_view_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7065949">
-              <caret line="112" column="72" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.88694483">
+              <caret line="125" column="182" selection-start-line="125" selection-start-column="182" selection-end-line="125" selection-end-column="182" />
               <folding>
-                <marker date="1444888473551" expanded="true" signature="127:153" placeholder="select * FRO..registration..." />
-                <marker date="1444888473551" expanded="true" signature="127:232" placeholder="select * FRO..registration..." />
-                <marker date="1444888473551" expanded="true" signature="404:499" placeholder="..." />
-                <marker date="1444888473551" expanded="true" signature="730:770" placeholder="..." />
+                <marker date="1444889788235" expanded="true" signature="127:153" placeholder="select * FRO..registration..." />
+                <marker date="1444889788235" expanded="true" signature="127:232" placeholder="select * FRO..registration..." />
+                <marker date="1444889788235" expanded="true" signature="404:499" placeholder="..." />
+                <marker date="1444889788235" expanded="true" signature="730:770" placeholder="..." />
+                <marker date="1444889788235" expanded="true" signature="6741:6766" placeholder="select * FRO..registration..." />
+                <marker date="1444889788235" expanded="true" signature="6741:6816" placeholder="select * FRO..audio_table..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/delete_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.6">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,6 +128,7 @@
         <option value="$PROJECT_DIR$/js/record.js" />
         <option value="$PROJECT_DIR$/admin_change_info.html" />
         <option value="$PROJECT_DIR$/rajesh_model.php" />
+        <option value="$PROJECT_DIR$/delete_controller.php" />
         <option value="$PROJECT_DIR$/admin_view_user.php" />
       </list>
     </option>
@@ -309,6 +322,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07553366">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -389,14 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rajesh_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5666666">
@@ -411,15 +417,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.6">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin_view_user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7065949">
-          <caret line="112" column="72" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.88694483">
+          <caret line="125" column="182" selection-start-line="125" selection-start-column="182" selection-end-line="125" selection-end-column="182" />
           <folding>
-            <marker date="1444888473551" expanded="true" signature="127:153" placeholder="select * FRO..registration..." />
-            <marker date="1444888473551" expanded="true" signature="127:232" placeholder="select * FRO..registration..." />
-            <marker date="1444888473551" expanded="true" signature="404:499" placeholder="..." />
-            <marker date="1444888473551" expanded="true" signature="730:770" placeholder="..." />
+            <marker date="1444889788235" expanded="true" signature="127:153" placeholder="select * FRO..registration..." />
+            <marker date="1444889788235" expanded="true" signature="127:232" placeholder="select * FRO..registration..." />
+            <marker date="1444889788235" expanded="true" signature="404:499" placeholder="..." />
+            <marker date="1444889788235" expanded="true" signature="730:770" placeholder="..." />
+            <marker date="1444889788235" expanded="true" signature="6741:6766" placeholder="select * FRO..registration..." />
+            <marker date="1444889788235" expanded="true" signature="6741:6816" placeholder="select * FRO..audio_table..." />
           </folding>
         </state>
       </provider>

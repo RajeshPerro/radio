@@ -105,12 +105,26 @@ $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
                                         $Server='http://'.$_SERVER['HTTP_HOST'];
                                         $resume_link=$value['image'];
                                         ?>
-                                        <td><a href="<?php echo $Server.'/foorti/resume/'.$resume_link?>"><?php echo $value['image']?></a></td>
+                                        <td><a href="<?php echo $Server.'/foorti/resume/'.$resume_link?>" target="_blank"><?php echo $value['image']?></a></td>
                                         <td><?php echo $value['question1']?></td>
                                         <td><?php echo $value['question2']?></td>
                                         <td><?php echo $value['question3']?></td>
                                         <td><?php echo $value['question4']?></td>
                                         <td><?php echo $value['question5']?></td>
+                                        <?php
+                                        $Email=$value['emailAddress'];
+                                        echo $Email;
+                                        $sql_audio="select * FROM audio_table WHERE emailAddress='$Email' GROUP BY emailAddress";
+                                        $fetch_audio=$raj_modelobject->DataView2($sql_audio,$db_user,$db_pass,$db_Name);
+                                        foreach($fetch_audio as $key=> $row)
+                                        ?>
+                                        <td>
+                                            <a href="<?php echo $Server.'/foorti/audio/'.$row['image']?>" target="_blank">
+                                            <?php echo $row['image']?>
+                                            </a>
+                                        </td>
+                                        <td><a onclick="if (! confirm('Are you sure?')) return false;" class="text" href="delete_controller.php?id=<?php  echo $value['id'] ?>">Delete</a>
+                                        </td>
                                     </tr>
                                     <?php
                                 }
