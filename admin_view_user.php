@@ -1,4 +1,12 @@
 <?php
+session_start();
+if($_SESSION['user_id'] !="")
+{
+    $User_id=$_SESSION['user_id'];
+    $User_name=$_SESSION['user_name'];
+    $User_pass= $_SESSION['user_pass'];
+}
+
 include('rajesh_model.php');
 include('database_config.php');
 $db_user =$DataBaseUser;
@@ -8,9 +16,7 @@ $db_Name=$DataBaseName;
 $sl=0;
 $fetch_result=$raj_modelobject->DataView($sql,$db_user,$db_pass,$db_Name);
 //print_r($fetch_result);
-session_start();
-$User=$_SESSION['user'];
-echo $User;
+
 ?>
 
 
@@ -45,7 +51,7 @@ echo $User;
 
                 <div class="content">
                     <div class="col-xs-12 col-sm-12">
-                        <h4><a href="admin_change_info.html" class="text">Change Admin Information</a> | <a href="#"
+                        <h4><a href="#" class="text">Change Admin Information</a> | <a href="admin_change_info.php?id=<?php echo $User_id?>&name=<?php echo $User_name?>&pass=<?php echo $User_pass?>"
                                                                                                             class="text">View
                                 User Information</a></h4>
                         <hr>

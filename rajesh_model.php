@@ -2,7 +2,7 @@
 
 <?php
 //error_reporting(0);
-session_start();
+
 class connect
 {
     var $host;
@@ -47,20 +47,21 @@ class test
 
         }
 
-        $sql = "select * from $table where `admin_username`='$username'";
+        $sql = "select * from $table where admin_username='$username'";
         $data = $dbcon->query($sql);
         $row = $data->fetch(PDO::FETCH_ASSOC);
 
-        //$query = mysql_query($sql);
-        //$row = mysql_fetch_array($query);
         trim($dbuser = $row['admin_username']);
         trim($dbpass = $row['admin_password']);
-        //$entyppass=md5($passworard);
-       // echo "<br>".$username.$passworard."from";
+
 
         if (($dbpass != "" && $dbuser != "") && $dbuser == $username && $dbpass == $passworard)
         {
-          echo  $_SESSION['user'] = $dbuser;
+            session_start();
+           $_SESSION['user_id'] = $row['id'];
+            $_SESSION['user_name'] = $row['admin_username'];
+            $_SESSION['user_pass'] = $row['admin_password'];
+
 
         }
         else {
@@ -457,7 +458,8 @@ class test
             $allvalues.=$colum.$allimge;
         }
         $sql="update $table set $allvalues where id=$id";
-        // exit;
+       //print_r($sql);
+       // exit;
 
         $connection_object=new connect();
         if(!empty($con_user) && !empty($con_pass))

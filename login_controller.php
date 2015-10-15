@@ -5,6 +5,7 @@
  * Date: 10/15/15
  * Time: 12:45 PM
  */
+session_start();
 include('rajesh_model.php');
 include('database_config.php');
 

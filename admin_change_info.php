@@ -1,3 +1,12 @@
+<?php
+
+    $User_id=$_GET['id'];
+    $User_name=$_GET['name'];
+    $User_pass= $_GET['pass'];
+
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,7 +20,7 @@
         <!--WRAPPER-->
         <div id="wrapper">
             <!--LOGIN FORM-->
-            <form name="admin_login" class="login-form" action="" method="post">
+            <form name="admin_login" class="login-form" action="update_controller.php" method="post">
 
                 <!--HEADER-->
                 <div class="header">
@@ -28,18 +37,19 @@
                 <!--END HEADER-->
 
                 <!--CONTENT-->
+                <input type="text" name="id" value="<?php echo trim($User_id)?>">
                 <div class="content">
-                    <input name="admin_username" type="text" class="input" placeholder="Type admin username" onfocus="this.value = ''" /><!--END USERNAME-->
+                    <input name="admin_username" type="text" class="input" value="<?php echo trim($User_name)?>" /><!--END USERNAME-->
                 </div>
                 <div class="content">
-                    <input name="admin_password" type="password" class="input" placeholder="Enter password" onfocus="this.value = ''" /><!--END USERNAME-->
+                    <input name="admin_password" type="text" class="input" value="<?php echo trim($User_pass)?>" /><!--END USERNAME-->
                 </div>
                 <!--END CONTENT-->
 
                 <!--FOOTER-->
                 <div class="footer">
 
-                    <input type="submit" name="submit" value="Update" class="button1" /><!--END LOGIN BUTTON-->
+                    <input type="submit" value="Update" class="button1" /><!--END LOGIN BUTTON-->
                 </div>
                 <!--END FOOTER-->
 
@@ -50,7 +60,7 @@
         <!--END WRAPPER-->
 
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+       <script src="js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 
