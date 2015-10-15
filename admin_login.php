@@ -11,7 +11,7 @@
         <!--WRAPPER-->
         <div id="wrapper">
             <!--LOGIN FORM-->
-            <form name="admin_login" class="login-form" action="" method="post">
+            <form name="admin_login" class="login-form" action="login_controller.php" method="post">
 
                 <!--HEADER-->
                 <div class="header">
@@ -32,7 +32,7 @@
                 <!--FOOTER-->
                 <div class="footer">
                     
-                    <input type="submit" name="submit" value="Sign In" class="button1" /><!--END LOGIN BUTTON-->
+                    <input type="submit" value="Sign In" class="button1" /><!--END LOGIN BUTTON-->
                 </div>
                 <!--END FOOTER-->
 

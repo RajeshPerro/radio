@@ -47,26 +47,26 @@ class test
 
         }
 
-        $sql = "select * from $table where `user_name`='$username'";
+        $sql = "select * from $table where `admin_username`='$username'";
         $data = $dbcon->query($sql);
         $row = $data->fetch(PDO::FETCH_ASSOC);
 
         //$query = mysql_query($sql);
         //$row = mysql_fetch_array($query);
-        trim($dbuser = $row['user_name']);
-        trim($dbpass = $row['password']);
+        trim($dbuser = $row['admin_username']);
+        trim($dbpass = $row['admin_password']);
         //$entyppass=md5($passworard);
        // echo "<br>".$username.$passworard."from";
 
         if (($dbpass != "" && $dbuser != "") && $dbuser == $username && $dbpass == $passworard)
         {
-            $_SESSION['user'] = $dbuser;
-            echo("<script>location.href='content_upload.php'</script>");
+          echo  $_SESSION['user'] = $dbuser;
+
         }
         else {
             $string = ' Sorry! Try again.\n Username or Password is Wrong.';
             echo "<script>alert(\"$string\")</script>";
-            echo("<script>location.href='index.php'</script>");
+            echo("<script>location.href='admin_login.php'</script>");
         }
     }
 
